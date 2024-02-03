@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "outDir": "dist",
+    "lib": ["es2020"],
+    "target": "ESNext",
+    "module": "nodeNext", // see https://medium.com/codememo/node-js-typescript-with-esm-in-2023-6b87e6f8e737 for more info
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+  "exclude": ["codegen.ts", "dist", "node_modules"]
+}

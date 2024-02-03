@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "generate": "graphql-codegen",
+    "compile": "rm -rf dist && tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/introspection": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/node": "^20.11.16",
+    "graphql-codegen-typescript-common": "0.18.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.8.1",
+    "lodash.merge": "^4.6.2",
+    "tsc-module-loader": "^0.0.1"
+  }
+}
